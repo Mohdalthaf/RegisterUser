@@ -1,27 +1,21 @@
 package com.example.RegisterLogin.Entity;
+
 import javax.persistence.*;
 
 @Entity
-@Table(name = "profile")
-public class Profile {
+@Table(name = "active_memberships")
+public class ActiveMembership {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long user_id;
-
-    @OneToOne
-    @JoinColumn(name = "user_id")
-    private PersonalDetails personalDetails;
+    private Long membership_id;
 
     @OneToOne
     @JoinColumn(name = "user_id")
     private NomineeDetails nomineeDetails;
 
-    // Other attributes specific to the profile
-    private String relationship_manager;
+    private String membership_status;
 
     // Getters and setters
 }
-
-
 

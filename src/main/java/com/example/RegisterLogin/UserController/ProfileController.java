@@ -15,11 +15,13 @@ import org.springframework.web.bind.annotation.*;
 public class ProfileController {
     private final ProfileService profileService;
 
-    @PostMapping
-    public ResponseEntity<Object> createProfile(@RequestBody ProfileDTO profileDTO) {
-        Profile createdProfile = profileService.createProfile(profileDTO);
-        return ResponseEntity.ok(createdProfile);
+
+    @PostMapping("/profiles")
+    public ResponseEntity<String> createProfile(@RequestBody ProfileDTO profileDTO) {
+        // Your logic to save the profile
+        return ResponseEntity.ok("Profile created successfully");
     }
+
 
     // Other endpoints as needed
 }

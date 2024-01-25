@@ -2,11 +2,17 @@ package com.example.RegisterLogin.Dto;
 
 
 
-import lombok.Data;
-
-@Data
 public class ProfileDTO {
+
     private String name;
-    private String relationshipStatus;
-    private String phoneNumber;
+    private String relationship;
+    private String phone_no;
+    private String nominee_details;
+    private String membership_status;
+
+    // Getters and setters
 }
+
+
+
+
