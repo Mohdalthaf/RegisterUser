@@ -1,28 +1,23 @@
 package com.example.RegisterLogin.UserController;
 
 
-
 import com.example.RegisterLogin.Dto.ProfileDTO;
-import com.example.RegisterLogin.Entity.Profile;
 import com.example.RegisterLogin.Service.impl.ProfileService;
-import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/profiles")
-@RequiredArgsConstructor
+@RequestMapping("/api/profile")
 public class ProfileController {
-    private final ProfileService profileService;
 
+    @Autowired
+    private ProfileService profileService;
 
-    @PostMapping("/profiles")
-    public ResponseEntity<String> createProfile(@RequestBody ProfileDTO profileDTO) {
-        // Your logic to save the profile
-        return ResponseEntity.ok("Profile created successfully");
+    @GetMapping("/{userId}")
+    public ProfileDTO getProfileDetails(@PathVariable Long userId) {
+        return profileService.getProfileDetails(userId);
     }
-
-
-    // Other endpoints as needed
 }
-

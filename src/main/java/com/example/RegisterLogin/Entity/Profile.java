@@ -1,4 +1,6 @@
 package com.example.RegisterLogin.Entity;
+import com.example.RegisterLogin.Dto.ProfileDTO;
+
 import javax.persistence.*;
 
 @Entity
@@ -19,6 +21,15 @@ public class Profile {
 
     // Other attributes specific to the profile
     private String relationship_manager;
+
+    public ProfileDTO getPersonalDetails() {
+
+        return null;
+    }
+
+    public ProfileDTO getNomineeDetails() {
+        return null;
+    }
 
     // Getters and setters
 }

@@ -16,6 +16,10 @@ public class ActiveMembership {
 
     private String membership_status;
 
+    public String getMembership_status() {
+        return null;
+    }
+
     // Getters and setters
 }
 
