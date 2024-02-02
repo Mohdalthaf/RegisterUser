@@ -36,6 +36,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api/additional-info")
 public class AdditionalInfoController {
 
