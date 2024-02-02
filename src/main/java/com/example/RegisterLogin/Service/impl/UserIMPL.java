@@ -3,7 +3,7 @@ package com.example.RegisterLogin.Service.impl;
 
 
 import com.example.RegisterLogin.Dto.UserDTO;
-import com.example.RegisterLogin.Dto.UserRepo;
+import com.example.RegisterLogin.Repo.UserRepo;
 import com.example.RegisterLogin.Entity.User;
 
 import com.example.RegisterLogin.Service.UserService;

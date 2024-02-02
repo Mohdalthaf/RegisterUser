@@ -1,4 +1,4 @@
-package com.example.RegisterLogin.Dto;
+package com.example.RegisterLogin.Repo;
 
 
 import com.example.RegisterLogin.Entity.User;
