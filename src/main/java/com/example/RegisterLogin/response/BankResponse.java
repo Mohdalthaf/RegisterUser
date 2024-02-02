@@ -7,20 +7,19 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class LoginResponse {
+
+public class BankResponse {
     String Message;
     Boolean status;
-    Integer userID;
-
+    int userid;
     String name;
-
 
     @Override
     public String toString() {
-        return "LoginResponse{" +
+        return "BankResponse{" +
                 "Message='" + Message + '\'' +
                 ", status=" + status +
-                ", userID='" + userID + '\'' +
+                ", userid=" + userid +
                 ", name='" + name + '\'' +
                 '}';
     }
