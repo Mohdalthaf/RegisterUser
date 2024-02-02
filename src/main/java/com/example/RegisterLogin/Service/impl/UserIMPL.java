@@ -1,11 +1,11 @@
 package com.example.RegisterLogin.Service.impl;
 
-import com.example.RegisterLogin.Dto.LoginDTO;
-import com.example.RegisterLogin.Dto.UserDTO;
-import com.example.RegisterLogin.Entity.User;
-import com.example.RegisterLogin.Repo.UserRepo;
-import com.example.RegisterLogin.Service.UserService;
-import com.example.RegisterLogin.response.LoginResponse;
+import com.example.loginproject.Dto.LoginDTO;
+import com.example.loginproject.Dto.UserDTO;
+import com.example.loginproject.Entity.User;
+import com.example.loginproject.Repo.UserRepo;
+import com.example.loginproject.Service.UserService;
+import com.example.loginproject.response.LoginResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -48,14 +48,14 @@ public class UserIMPL implements UserService {
             // Check if the provided password matches the stored password
             if (storedPassword.equals(userProvidedPassword)) {
                 // Passwords match, login successful
-                return new LoginResponse("Login Success", true,user1.getUserfullname());
+                return new LoginResponse("Login Success", true, user1.getUserid(), user1.getUserfullname());
             } else {
                 // Passwords do not match, login failed
-                return new LoginResponse("Login Failed", false,null);
+                return new LoginResponse("Login Failed", false,user1.getUserid(), user1.getUserfullname());
             }
         } else {
             // User not found, indicate that the email does not exist
-            return new LoginResponse("Email not exists", false,null);
+            return new LoginResponse("Email not exists", false,user1.getUserid(), user1.getUserfullname());
         }
     }
     public String generateUserId() {
