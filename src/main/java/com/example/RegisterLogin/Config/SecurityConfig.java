@@ -1,4 +1,4 @@
-package com.example.RegisterLogin.Config;
+//package com.example.RegisterLogin.Config;
 
 //import org.springframework.context.annotation.Bean;
 //import org.springframework.context.annotation.Configuration;
