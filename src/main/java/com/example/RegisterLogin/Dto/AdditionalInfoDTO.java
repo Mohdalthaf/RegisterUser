@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class AdditionalInfoDTO {
 
-    private Long userId;
+    private Long userid;
     private String annualIncome;
     private String countryOfBirth;
     private BigDecimal netWorth;
@@ -23,10 +23,10 @@ public class AdditionalInfoDTO {
     public AdditionalInfoDTO() {
     }
 
-    public AdditionalInfoDTO(Long userId, String annualIncome, String countryOfBirth, BigDecimal netWorth,
+    public AdditionalInfoDTO(Long userid, String annualIncome, String countryOfBirth, BigDecimal netWorth,
                              String sourceOfIncome, Date netWorthDate, String occupation,
                              Boolean polExpPerson, Boolean taxPayer) {
-        this.userId = userId;
+        this.userid = userid;
         this.annualIncome = annualIncome;
         this.countryOfBirth = countryOfBirth;
         this.netWorth = netWorth;
@@ -37,12 +37,12 @@ public class AdditionalInfoDTO {
         this.taxPayer = taxPayer;
     }
 
-    public Long getUserId() {
-        return userId;
+    public Long getUserid() {
+        return userid;
     }
 
-    public void setUserId(Long userId) {
-        this.userId = userId;
+    public void setUserid(Long userid) {
+        this.userid = userid;
     }
 
     public String getAnnualIncome() {

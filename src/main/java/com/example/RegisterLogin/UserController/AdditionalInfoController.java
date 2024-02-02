@@ -90,7 +90,7 @@ public class AdditionalInfoController {
     private AdditionalInfo convertDTOToEntity(AdditionalInfoDTO additionalInfoDTO) {
         AdditionalInfo ado=new AdditionalInfo();
 
-        ado.setUserId(additionalInfoDTO.getUserId());
+        ado.setUserId(additionalInfoDTO.getUserid());
         ado.setAnnualIncome(additionalInfoDTO.getAnnualIncome());
         ado.setCountryOfBirth(additionalInfoDTO.getCountryOfBirth());
         ado.setNetWorth(additionalInfoDTO.getNetWorth());
