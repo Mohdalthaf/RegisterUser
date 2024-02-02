@@ -1,8 +1,9 @@
 package com.example.RegisterLogin.Service;
 
-import com.example.loginproject.Dto.LoginDTO;
-import com.example.loginproject.Dto.UserDTO;
-import com.example.loginproject.response.LoginResponse;
+
+import com.example.RegisterLogin.Dto.LoginDTO;
+import com.example.RegisterLogin.Dto.UserDTO;
+import com.example.RegisterLogin.response.LoginResponse;
 
 public interface UserService {
 

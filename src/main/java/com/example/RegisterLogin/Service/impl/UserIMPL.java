@@ -1,11 +1,12 @@
 package com.example.RegisterLogin.Service.impl;
 
-import com.example.loginproject.Dto.LoginDTO;
-import com.example.loginproject.Dto.UserDTO;
-import com.example.loginproject.Entity.User;
-import com.example.loginproject.Repo.UserRepo;
-import com.example.loginproject.Service.UserService;
-import com.example.loginproject.response.LoginResponse;
+
+import com.example.RegisterLogin.Dto.LoginDTO;
+import com.example.RegisterLogin.Dto.UserDTO;
+import com.example.RegisterLogin.Entity.User;
+import com.example.RegisterLogin.Repo.UserRepo;
+import com.example.RegisterLogin.Service.UserService;
+import com.example.RegisterLogin.response.LoginResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
