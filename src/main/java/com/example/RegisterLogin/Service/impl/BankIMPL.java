@@ -19,7 +19,7 @@ public class BankIMPL implements BankService {
         System.out.println("userid:"+bankDTO);
         Bank bank = new Bank(
 //"2",
-                   String.valueOf(bankDTO.getUserid()),  // Convert Integer to String
+                   String.valueOf(bankDTO.getUserid()),
                     bankDTO.getAcctype(),
                     bankDTO.getAccno(),
                     bankDTO.getIfsccode()
