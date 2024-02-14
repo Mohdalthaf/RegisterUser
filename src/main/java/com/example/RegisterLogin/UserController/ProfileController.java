@@ -1,6 +1,6 @@
 package com.example.RegisterLogin.UserController;// ProfileController.java
 import com.example.RegisterLogin.Entity.User;
-import com.example.RegisterLogin.Service.impl.ProfileService;
+import com.example.RegisterLogin.Service.ProfileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
