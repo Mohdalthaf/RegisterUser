@@ -1,4 +1,4 @@
-package com.example.RegisterLogin.UserController;
+package com.example.RegisterLogin.Controller;
 
 
 import com.example.RegisterLogin.Dto.LoginDTO;
