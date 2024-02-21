@@ -1,11 +1,9 @@
 package com.example.RegisterLogin.Repo;
 
-import com.example.RegisterLogin.Entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.stereotype.Repository;
-
-import java.util.Optional;
+import com.example.RegisterLogin.Entity.User;
 
 @EnableJpaRepositories
 @Repository
