@@ -1,6 +1,3 @@
-
-//reyvanth
-
 package com.example.RegisterLogin.Entity;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -34,6 +31,9 @@ public class User {
 
     @Column(name = "password", length = 255)
     private String password;
+
+
+
 
 
 
